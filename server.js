@@ -140,6 +140,10 @@ app.get("/api/books/search", (req, res) => {
     );
 
     res.json(result);
+    res.json({
+    message: "Search completed successfully",
+    books: result
+});
 });
 
 // TASK 7: Issue book
